@@ -1,4 +1,4 @@
-![FYI-uos](./FYI-uos)
+![FYI-uos](./FYI-uos.png)
 
 # Unix-like Operating Systems (BI-UOS)
 
@@ -11,5 +11,6 @@ It primarily contains my notes for this course. Presented as documentation I wro
 ## Shell Scripts
 It primarily contains my notes for this course. Presented as documentation I wrote myself to learn Bash commands and tricks.<br>
 [Link to Shell Scripts](./shell_scripts)
+
 
 
