@@ -3,9 +3,10 @@
 This repository contains homework from the Unix-like Operating Systems (BI-UOS) course at CTU FIT.
 
 ## Notes
-Contains the primary assignments from the course. Each task includes a detailed explanation of the assignment requirements and objectives.  
+It primarily contains my notes for this course. Presented as documentation I wrote myself to learn Bash commands and tricks.<br>
 [Link to Notes](./notes)
 
 ## Shell Scripts
-Includes smaller assignments that focus on specific programming concepts. Like the main tasks, each mini-task also provides a clear description of the problem.  
+It primarily contains my notes for this course. Presented as documentation I wrote myself to learn Bash commands and tricks.<br>
 [Link to Shell Scripts](./shell_scripts)
+
