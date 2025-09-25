@@ -6,7 +6,6 @@ CYAN="\033[0;36m"
 BOLD='\033[1m'
 END_COLOR="\033[0m"
 
-# Statistics variables
 correct_answers=0
 wrong_answers=0
 timeout_answers=0
