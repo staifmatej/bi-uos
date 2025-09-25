@@ -29,27 +29,32 @@ Special symbols:
 
 ## Special operators
 
-**`;`** - Command separator. Runs commands one after another.
+### `;`
+Command separator. Runs commands one after another.
 ```bash
 ls; pwd; date
 ```
 
-**`|`** - Pipe. Takes output from one command and uses it as input for the next.
+### `|`
+Pipe. Takes output from one command and uses it as input for the next.
 ```bash
 ls -la | grep ".txt"
 ```
 
-**`&`** - Runs command in background.
+### `&`
+Runs command in background.
 ```bash
 python script.py &
 ```
 
-**`>`** - Redirects output to a file (overwrites existing content).
+### `>`
+Redirects output to a file (overwrites existing content).
 ```bash
 ls > files.txt
 ```
 
-**`>>`** - Appends output to the end of an existing file (adds to its current content).
+### `>>`
+Appends output to the end of an existing file (adds to its current content).
 ```bash
 echo "new line" >> files.txt
 ```
@@ -175,6 +180,7 @@ mv folder1/ folder2/         # move folder1 inside folder2
 mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
+
 
 
 
