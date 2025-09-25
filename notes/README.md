@@ -11,7 +11,7 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 **Absolute path** starts from the root of the file system (on Unix/Linux/macOS starts with `/`, on Windows with `C:\`).
 
 Examples of absolute paths:
-- `/Users/username/Desktop/file.txt`
+- `/Users/staifmat/Desktop/file.txt`
 - `/home/user/documents/notes.md`
 - `/var/log/system.log`
 
@@ -49,7 +49,7 @@ python script.py &
 ls > files.txt
 ```
 
-**`>>`** - Redirects output to a file (appends to existing content).
+**`>>`** - Appends output to the end of an existing file (adds to its current content).
 ```bash
 echo "new line" >> files.txt
 ```
@@ -82,11 +82,11 @@ README.md     notes         shell_scripts
 **What it does:** changes your current directory (moves you to a different folder).
 
 ```bash
-cd /Users/username/Documents  # absolute path
+cd /Users/staifmat/Documents  # absolute path
 cd documents                  # relative path
-cd ..                        # go up one level
-cd ~                         # go to home directory
-cd -                         # go to previous directory
+cd ..                         # go up one level
+cd ~                          # go to home directory
+cd -                          # go to previous directory
 ```
 
 ### `grep`
@@ -111,7 +111,7 @@ grep -r "function" src/       # search for "function" in src folder
 
 ```bash
 pwd
-# Output: /Users/username/Desktop/bi-uos
+# Output: /Users/staifmat/Desktop/bi-uos
 ```
 
 ### `awk`
@@ -175,5 +175,6 @@ mv folder1/ folder2/         # move folder1 inside folder2
 mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
+
 
 
