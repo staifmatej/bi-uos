@@ -194,7 +194,7 @@ man grep                     # show manual for grep command
 **What it does:** displays file content page by page (useful for large files).
 
 ```bash
-less large_file.txt          # view file with pagination
+less large_file.txt          # view file with pagination (pagination == stránkování)
 # Use arrow keys to navigate, 'q' to quit
 ```
 
@@ -221,6 +221,7 @@ mv folder1/ folder2/         # move folder1 inside folder2
 mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
+
 
 
 
