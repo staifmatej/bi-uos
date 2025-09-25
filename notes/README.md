@@ -129,6 +129,47 @@ awk '{print $2, $4}' data.txt # print 2nd and 4th columns
 awk '/pattern/ {print}' file  # print lines containing "pattern"
 ```
 
+**Practical examples with files:**
+
+```bash
+# Example file: employees.csv
+# Name,Age,Department,Salary
+# John,28,IT,5000
+# Sarah,35,HR,4500
+# Mike,42,Finance,6000
+
+# Extract just names (first column)
+awk -F',' '{print $1}' employees.csv
+# Output: Name, John, Sarah, Mike
+
+# Print name and salary (columns 1 and 4)
+awk -F',' '{print $1, $4}' employees.csv
+# Output: Name Salary, John 5000, Sarah 4500, Mike 6000
+
+# Find employees in IT department
+awk -F',' '/IT/ {print $1, $4}' employees.csv
+# Output: John 5000
+
+# Calculate total salary (skip header)
+awk -F',' 'NR>1 {sum+=$4} END {print "Total:", sum}' employees.csv
+# Output: Total: 15500
+
+# Find employees older than 30
+awk -F',' 'NR>1 && $2>30 {print $1, "is", $2, "years old"}' employees.csv
+# Output: Sarah is 35 years old, Mike is 42 years old
+```
+
+-F',' - This tells awk how to split fields (field separator)<br>
+-NR - current line number<br>
+-NF - number of fields in current line<br>
+-END - execute after processing all lines<br>
+
+**Common options:**
+- `-F','` - set field separator to comma (for CSV files)
+- `NR` - current line number
+- `NF` - number of fields in current line
+- `END` - execute after processing all lines
+
 ### `date`
 
 **What it does:** displays or sets the current date and time.
@@ -180,6 +221,7 @@ mv folder1/ folder2/         # move folder1 inside folder2
 mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
+
 
 
 
