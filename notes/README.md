@@ -36,7 +36,7 @@ ls; pwd; date
 ```
 
 ### `|`
-Pipe. Takes output from one command and uses it as input for the next.
+A pipe (|) processes data from left to right,. Takes output from one command and uses it as input for the next.
 ```bash
 ls -la | grep ".txt"
 ```
@@ -180,6 +180,7 @@ mv folder1/ folder2/         # move folder1 inside folder2
 mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
+
 
 
 
