@@ -129,7 +129,7 @@ awk '/pattern/ {print}' file  # print lines containing "pattern"
 **What it does:** displays or sets the current date and time.
 
 ```bash
-date                          # current date and time
+date                         # current date and time
 date +%Y-%m-%d               # format: 2024-03-15
 date +%H:%M                  # format: 14:30
 ```
@@ -175,6 +175,7 @@ mv folder1/ folder2/         # move folder1 inside folder2
 mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
+
 
 
 
