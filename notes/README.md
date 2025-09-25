@@ -4,7 +4,20 @@ A shell is a program that provides a user interface to interact with the operati
 
 The first shell ever created was the Thompson shell in 1971 at Bell Labs for Unix. The Bourne shell (sh) came later, in 1977, also at Bell Labs, and became the basis for most modern Unix shells, including Bash.
 
-## `ls`
+## Concepts
+co znamena relativni vs. absolutni cesta apod. + priklady co je co
+
+## Special operators
+
+;
+|
+&
+>
+>>
+
+## Commands
+
+### `ls`
 
 **What it does:** lists the contents of a directory – files and folders.
 
@@ -25,19 +38,17 @@ ls
 README.md     notes         shell_scripts
 (base) ➜  bi-uos git:(main) 
 ```
+### `cd`
 
 
-grep
-ls
+grep (ma vice vyznamu ne? takze nezapomen ukazat vsechny nebot alespon ty nejdulezitejsi!)
 pwd
-cd -
+awk
+cd - (co znamena relativni vs. absolutni cesta
 date
-man 
-less
-;
-|
-&
->
->>
-id
-man “command”
+man "command" (klidne jen kratce!!)
+less 
+id (pokud ma jen jeden vyznam tak jen kratce!!)
+mv (ma vice vyznamu, zmin oba! - jak presunuti tak pojmenovani slozky/souboru)
+
+
