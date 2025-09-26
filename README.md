@@ -9,8 +9,10 @@ It primarily contains my notes for this course. Presented as documentation I wro
 [Link to Notes](./notes)
 
 ## Shell Scripts
-It primarily contains my notes for this course. Presented as documentation I wrote myself to learn Bash commands and tricks.<br>
+Shell scripts that I wrote to learn shell, entirely on my own initiative.
+<br>
 [Link to Shell Scripts](./shell_scripts)
+
 
 
 
