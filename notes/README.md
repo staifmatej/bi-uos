@@ -222,6 +222,31 @@ mv oldname.txt newname.txt   # rename file
 mv old_folder new_folder     # rename folder
 ```
 
+### `wc`
+
+**what it does:** It shows the count of lines, words and characters.
+
+**counting lines/rows (-l)**
+```bash
+wc -l soubor.txt            # it write the number of rows (lines). -l stands for lines. 
+echo -e "a\nb\nc" | wc -l   # 3
+```
+**counting words (-w)**
+```bash
+wc -w soubor.txt                   #  it write the number of words. -w stands for words.
+echo "hello world test" | wc -w    # 3
+```
+**counting characters (-c or -m)**
+```bash
+wc -m soubor.txt          # number of the multibyte characters (better for UTF-8)
+wc -c soubor.txt          # number of the characters/bytes
+echo "čeština" | wc -m    # 10 (bytes) ('č' and 'š' have both 2 bytes)
+echo "čeština" | wc -c    # 8 (characters) (count č' and 'š' as 1 byte characters)
+
+```
+
+
+
 
 
 
