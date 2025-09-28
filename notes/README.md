@@ -1,4 +1,4 @@
-# Notes
+# Notes📝
 
 A shell is a program that provides a user interface to interact with the operating system – allowing you to run commands, execute programs, and write scripts.
 
@@ -363,6 +363,7 @@ echo -e "hello\n\tworld"      # print:
                               #   world (with tab and newline)
 echo "hello\n\tworld" print: hello\n\tworld
 ```
+
 
 
 
