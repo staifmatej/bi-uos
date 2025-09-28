@@ -226,17 +226,17 @@ mv old_folder new_folder     # rename folder
 
 **what it does:** It shows the count of lines, words and characters.
 
-**counting lines/rows (-l)**
+**Counting lines/rows (-l)**
 ```bash
 wc -l soubor.txt            # it write the number of rows (lines). -l stands for lines. 
 echo -e "a\nb\nc" | wc -l   # 3
 ```
-**counting words (-w)**
+**Counting words (-w)**
 ```bash
 wc -w soubor.txt                   #  it write the number of words. -w stands for words.
 echo "hello world test" | wc -w    # 3
 ```
-**counting characters (-c or -m)**
+**Counting characters (-c or -m)**
 ```bash
 wc -m soubor.txt          # number of the multibyte characters (better for UTF-8)
 wc -c soubor.txt          # number of the characters/bytes
@@ -245,11 +245,32 @@ echo "čeština" | wc -c    # 8 (characters) (count č' and 'š' as 1 byte chara
 
 ```
 
+### `tr`
 
+**what it does:** transforms or deletes characters
 
+**Substitution of the characters**
+```bash
+echo "hello" | tr 'e' 'a'      # hello → hallo
+echo "hello" | tr 'lo' 'xy'    # hello → hexyy
+```
+**Deletion of the characters (-d)**
+```bash
+echo "hello123world" | tr -d '0-9'     # helloworld
+echo "a b c d" | tr -d ' '             # abcd
+```
+**Compression of repeating characters (-s)**
+```bash
+echo "hello    world" | tr -s ' '      # hello world
+echo "aaabbbccc" | tr -s 'abc'         # abc
+```
 
+**Working with ranges**
 
-
+```bash
+echo "abc123" | tr 'a-z' 'A-Z'       # ABC123
+echo "hello" | tr 'a-z' '0-9'        # 74;;>
+```
 
 
 
