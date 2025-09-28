@@ -4,6 +4,8 @@ A shell is a program that provides a user interface to interact with the operati
 
 The first shell ever created was the Thompson shell in 1971 at Bell Labs for Unix. The Bourne shell (sh) came later, in 1977, also at Bell Labs, and became the basis for most modern Unix shells, including Bash.
 
+**Warning:** This documentation was written specifically for Linux OS, particularly tested on Debian and Ubuntu. For example, on macOS, some commands function slightly differently due to BSD vs. GNU implementations, even though they have the exact same names.
+
 ## Concepts
 
 ### Relative vs. Absolute Paths
@@ -320,6 +322,46 @@ usleep 1000  # pause for 1000 microseconds
 
 ### `fgrep`
 
+**what it does:** `fgrep` search for exact text.
+
+```bash
+# Use for searching exact string in file.
+fgrep "hello" file.txt    # searches for exact text "hello"
+
+# Use for searching exact string with input from ls command.
+ls -la | fgrep "staifmat"
+```
+
 ### `getent`
 
-### `printf`
+**what it does:** `getent` shows entries from system administrative databases.
+```bash
+getent passwd root         # specific users
+getent passwd              # show all users
+```
+ 
+### `printf` & `echo`
+
+**what `printf` does:** `printf` print text similar to `echo`.
+
+**Different between `printf`, `echo` and `echo -e`:**
+
+1. `echo` and `echo -e` → always add `\n` on the end.<br>
+   `printf` → never add anything automatic.
+2. `echo -e` → only escape sequence (`\n`, `\t`).<br>
+   `printf` → escape sequence + formating specificators (`%s`, `%d`, `%f`, etc.).
+
+**Basic `printf` formatting**
+```bash
+printf "Name: %s, Age: %d, Score: %.2f\n" "Alice" 25 87.456
+# Output: Name: Alice, Age: 25, Score: 87.46
+```
+
+```bash
+echo -e "hello\n\tworld"      # print:
+                              # hello
+                              #   world (with tab and newline)
+echo "hello\n\tworld" print: hello\n\tworld
+```
+
+
