@@ -272,6 +272,30 @@ echo "abc123" | tr 'a-z' 'A-Z'       # ABC123
 echo "hello" | tr 'a-z' '0-9'        # 74;;>
 ```
 
+### `declare`
 
+**what it does:** `declare` defines variable types and properties in bash shell.
 
+**most common use of a `declare`**
+```bash
+declare -i cislo=10        # integer variable (for arithmetic)
+declare -r konstanta="abc" # readonly variable (cannot be modified)
+declare -x export_var="hi" # exported variable (available to child processes)
+declare -a pole=(1 2 3)    # array variable
+```
+**with `declare -i` or without `declare -i`:**
+```bash
+# WITHOUT declare -i
+cislo=10              # save as STRING "10"
+cislo=cislo+5         # result: STRING "cislo+5" 
+echo $cislo           # prints: cislo+5
 
+cislo=10              # save as STRING "10"
+cislo=$(($cislo+5))   # result: INTEGER 15
+echo $cislo           # prints: 15
+
+# WITH declare -i
+declare -i cislo=10   # save as INTEGER 10
+cislo=cislo+5         # result: INTEGER 15
+echo $cislo           # prints: 15
+```
