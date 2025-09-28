@@ -4,7 +4,7 @@ A shell is a program that provides a user interface to interact with the operati
 
 The first shell ever created was the Thompson shell in 1971 at Bell Labs for Unix. The Bourne shell (sh) came later, in 1977, also at Bell Labs, and became the basis for most modern Unix shells, including Bash.
 
-**⚠️Warning:** This documentation was written specifically for Linux OS, particularly tested on Debian and Ubuntu. For example, on macOS, some commands function slightly differently due to BSD vs. GNU implementations, even though they have the exact same names.
+**⚠️ Warning:** This documentation was written specifically for Linux OS, particularly tested on Debian and Ubuntu. For example, on macOS, some commands function slightly differently due to BSD vs. GNU implementations, even though they have the exact same names.
 
 ## Concepts
 
@@ -226,7 +226,7 @@ mv old_folder new_folder     # rename folder
 
 ### `wc`
 
-**what it does:** It shows the count of lines, words and characters.
+**What it does:** It shows the count of lines, words and characters.
 
 **Counting lines/rows (-l)**
 ```bash
@@ -249,7 +249,7 @@ echo "čeština" | wc -c    # 8 (characters) (count č' and 'š' as 1 byte chara
 
 ### `tr`
 
-**what it does:** transforms or deletes characters
+**What it does:** transforms or deletes characters.
 
 **Substitution of the characters**
 ```bash
@@ -276,7 +276,7 @@ echo "hello" | tr 'a-z' '0-9'        # 74;;>
 
 ### `declare`
 
-**what it does:** `declare` defines variable types and properties in bash shell.
+**What it does:** `declare` defines variable types and properties in bash shell.
 
 **most common use of a `declare`**
 ```bash
@@ -304,7 +304,7 @@ echo $cislo           # prints: 15
 
 ### `sleep`
 
-**what is does:** `sleep` pauses execution for a specified amount of time.
+**What is does:** `sleep` pauses execution for a specified amount of time.
 ```bash
 sleep 5      # pause for 5 seconds (5000 miliseconds)
 sleep 10m    # pause for 10 minutes  
@@ -322,7 +322,7 @@ usleep 1000  # pause for 1000 microseconds
 
 ### `fgrep`
 
-**what it does:** `fgrep` search for exact text.
+**What it does:** `fgrep` searches for exact text.
 
 ```bash
 # Use for searching exact string in file.
@@ -334,7 +334,7 @@ ls -la | fgrep "staifmat"
 
 ### `getent`
 
-**what it does:** `getent` shows entries from system administrative databases.
+**What it does:** `getent` shows entries from system administrative databases.
 ```bash
 getent passwd root         # specific users
 getent passwd              # show all users
@@ -342,7 +342,7 @@ getent passwd              # show all users
  
 ### `printf` & `echo`
 
-**what `printf` does:** `printf` print text similar to `echo`.
+**What `printf` does:** `printf` prints text similar to `echo`.
 
 **Different between `printf`, `echo` and `echo -e`:**
 
@@ -361,9 +361,10 @@ printf "Name: %s, Age: %d, Score: %.2f\n" "Alice" 25 87.456
 ```bash
 echo -e "hello\n\tworld"      # print:
                               # hello
-                              #  world (with tab and newline)
+                              #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
