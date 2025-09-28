@@ -299,3 +299,27 @@ declare -i cislo=10   # save as INTEGER 10
 cislo=cislo+5         # result: INTEGER 15
 echo $cislo           # prints: 15
 ```
+
+### `sleep`
+
+**what is does:** `sleep` pauses execution for a specified amount of time.
+```bash
+sleep 5      # pause for 5 seconds (5000 miliseconds)
+sleep 10m    # pause for 10 minutes  
+sleep 2h     # pause for 2 hours
+sleep 1000   # pause for 1000 seconds
+
+# miliseconds
+sleep 0.1    # pause for 100 miliseconds
+sleep 0.001  # pause for 1 miliseconds 
+```
+```bash
+# usleep for microseconds
+usleep 1000  # pause for 1000 microseconds 
+```
+
+### `fgrep`
+
+### `getent`
+
+### `printf`
