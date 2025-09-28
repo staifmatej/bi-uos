@@ -361,9 +361,10 @@ printf "Name: %s, Age: %d, Score: %.2f\n" "Alice" 25 87.456
 ```bash
 echo -e "hello\n\tworld"      # print:
                               # hello
-                              #   world (with tab and newline)
-echo "hello\n\tworld"         #print: hello\n\tworld
+                              #  world (with tab and newline)
+echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
