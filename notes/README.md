@@ -357,12 +357,14 @@ printf "Name: %s, Age: %d, Score: %.2f\n" "Alice" 25 87.456
 # Output: Name: Alice, Age: 25, Score: 87.46
 ```
 
+**Basic `echo` formatting**
 ```bash
 echo -e "hello\n\tworld"      # print:
                               # hello
                               #   world (with tab and newline)
-echo "hello\n\tworld" print: hello\n\tworld
+echo "hello\n\tworld"         #print: hello\n\tworld
 ```
+
 
 
 
