@@ -4,7 +4,7 @@ A shell is a program that provides a user interface to interact with the operati
 
 The first shell ever created was the Thompson shell in 1971 at Bell Labs for Unix. The Bourne shell (sh) came later, in 1977, also at Bell Labs, and became the basis for most modern Unix shells, including Bash.
 
-**Warning:** This documentation was written specifically for Linux OS, particularly tested on Debian and Ubuntu. For example, on macOS, some commands function slightly differently due to BSD vs. GNU implementations, even though they have the exact same names.
+**Warning⚠️:** This documentation was written specifically for Linux OS, particularly tested on Debian and Ubuntu. For example, on macOS, some commands function slightly differently due to BSD vs. GNU implementations, even though they have the exact same names.
 
 ## Concepts
 
@@ -363,5 +363,6 @@ echo -e "hello\n\tworld"      # print:
                               #   world (with tab and newline)
 echo "hello\n\tworld" print: hello\n\tworld
 ```
+
 
 
