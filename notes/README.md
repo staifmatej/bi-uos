@@ -12,6 +12,9 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 [mini-test-01](./notes/mini-tests/mini-test-01) Creating files (optionally with their content), creating directories, and basic work with variables [**1 points**]
 
+## Link to Commands in Notes
+
+
 ## Tricks
 
 ### Brace Expansion
@@ -429,30 +432,13 @@ echo -e "hello\n\tworld"      # print:
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
 
+### `sort`
 
+**What it does:** Sorts lines of text alphabetically, numerically, or by other criteria.
+```bash
+# Create test file
+echo -e "zebra\napple\nbanana\ncat" > animals.txt
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Sort alphabetically (default)
+sort animals.txt
+# Output: apple, banana, cat, zebra
