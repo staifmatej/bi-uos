@@ -78,7 +78,7 @@ echo "$FILEbackup"    # DOES NOT WORK! (looks for "FILEbackup" variable)
 echo "${FILE}backup"  # WORKS! Output: documentbackup
 ```
 
-### `2>/dev/null` - Redirected to the Black Hall 
+### `2>/dev/null`
 
 **What it does:** Redirects error messages to `/dev/null` (the "black hole" that discards everything).
 ```bash
@@ -89,12 +89,6 @@ ls /nonexistent
 # Discard error messages
 ls /nonexistent 2>/dev/null
 # Output: (nothing - error disappeared)
-
-# Find files without "Permission denied" errors
-find / -name "*.txt" 2>/dev/null
-
-# Check if command exists (quietly)
-command -v git 2>/dev/null && echo "Git installed"
 ```
 
 
@@ -560,6 +554,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
