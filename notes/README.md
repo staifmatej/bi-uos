@@ -377,7 +377,7 @@ sleep 1000   # pause for 1000 seconds
 
 # milliseconds
 sleep 0.1    # pause for 100 milliseconds
-sleep 0.001  # pause for 1 milliseconds 
+sleep 0.001  # pause for 1 millisecond
 ```
 ```bash
 # usleep for microseconds
@@ -428,6 +428,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
