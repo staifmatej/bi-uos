@@ -438,6 +438,8 @@ echo "hello\n\tworld"         # print: hello\n\tworld
 ### `sort`
 
 **What it does:** Sorts lines of text alphabetically, numerically, or by other criteria.
+
+**Sort alphabetically (default)**
 ```bash
 # Create test file
 echo -e "zebra\napple\nbanana\ncat" > animals.txt
@@ -445,5 +447,19 @@ echo -e "zebra\napple\nbanana\ncat" > animals.txt
 # Sort alphabetically (default)
 sort animals.txt
 # Output: apple, banana, cat, zebra
+```
+**Sort Numeric (-n)**
+```bash
+echo -e "10\n2\n100\n3" > numbers.txt
+
+# Alphabetic (default - WRONG for numbers!)
+sort numbers.txt
+# Output: 10, 100, 2, 3
+
+# Numeric (CORRECT for numbers)
+sort -n numbers.txt
+# Output: 2, 3, 10, 100
+```
+
 
 
