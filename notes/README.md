@@ -470,6 +470,9 @@ echo -e "apple\nbanana\napple\ncat\nbanana" > test.txt
 sort -u test.txt
 # Output to screen: apple, banana, cat
 
+sort -u -r test.txt
+# Output to screen: cat, banana, apple
+
 # Check original file
 cat test.txt
 # Still contains: apple, banana, apple, cat, banana
@@ -481,6 +484,7 @@ sort -u test.txt -o test.txt
 cat test.txt
 # Now contains: apple, banana, cat (without duplicates)
 ```
+
 
 
 
