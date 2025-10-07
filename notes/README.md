@@ -73,9 +73,9 @@ echo "Hello ${NAME}world"
 
 # Another example
 FILE="document"
-echo "$FILE.txt"      # works (. is not part of variable name)
-echo "$FILEbackup"    # doesn't work (looks for "FILEbackup" variable)
-echo "${FILE}backup"  # works! Output: documentbackup
+echo "$FILE.txt"      # WORKS! (. is not part of variable name)
+echo "$FILEbackup"    # DOES NOT WORK! (looks for "FILEbackup" variable)
+echo "${FILE}backup"  # WORKS! Output: documentbackup
 ```
 ## Concepts
 
@@ -524,6 +524,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
