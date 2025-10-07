@@ -56,6 +56,27 @@ touch soubor_{a..d}{1..100}.txt
 # Create: soubor_a1.txt, soubor_a2.txt, ... soubor_d100.txt
 # Total: 4 letters × 100 numbers = 400 files!
 ```
+
+### Variable Expansion with `${}`
+**What it does:** `${}` clearly defines variable boundaries, allowing you to place text immediately after a variable name.
+```bash
+# Create variable
+NAME="John"
+
+# Without curly braces - doesn't work
+echo "Hello $NAMEworld"
+# Output: Hello  (looks for variable "NAMEworld" which doesn't exist)
+
+# With curly braces - works!
+echo "Hello ${NAME}world"
+# Output: Hello Johnworld
+
+# Another example
+FILE="document"
+echo "$FILE.txt"      # works (. is not part of variable name)
+echo "$FILEbackup"    # doesn't work (looks for "FILEbackup" variable)
+echo "${FILE}backup"  # works! Output: documentbackup
+```
 ## Concepts
 
 ### Relative vs. Absolute Paths
@@ -503,6 +524,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
