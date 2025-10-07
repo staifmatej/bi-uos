@@ -8,7 +8,7 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 ## Preparation for mini-tests
 
-[mini-tests](./notes/mini-tests) Main hub for mini-tests
+[mini-tests](./mini-tests) Main hub for mini-tests
 
 [mini-test-01](./notes/mini-tests/mini-test-01) Creating files (optionally with their content), creating directories, and basic work with variables [**1 points**]
 
@@ -555,3 +555,4 @@ cat test.txt
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
 ```
+
