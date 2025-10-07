@@ -83,7 +83,7 @@ Special symbols:
 
 ### `~`
 A shortcut that represents your home directory path.
-On Linux/Ubuntu: `~` expands to `/home/username`  
+On Linux: `~` expands to `/home/username`  
 
 ```bash
 # These are equivalent:
@@ -503,6 +503,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
