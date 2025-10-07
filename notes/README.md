@@ -29,6 +29,25 @@ Special symbols:
 - `..` = parent directory
 - `~` = user's home directory
 
+### Tilde (`~`) - Home Directory Shortcut
+
+**What it does:** `~` is a shortcut that represents your home directory path.
+
+On Linux/Ubuntu: `~` expands to `/home/username`  
+On macOS: `~` expands to `/Users/username`
+```bash
+# These are equivalent:
+cd ~
+cd /home/staifmat
+
+# You can use ~ in any path:
+cd ~/Desktop              # go to /home/staifmat/Desktop
+ls ~/Documents            # list files in /home/staifmat/Documents
+touch ~/test.txt          # create file in /home/staifmat/test.txt
+
+# Verify what ~ means:
+echo ~                    # prints: /home/staifmat
+
 ## Special operators
 
 ### `;`
@@ -364,6 +383,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
