@@ -8,7 +8,12 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 ## Preparation for mini-tests
 
-(mini-tests)[./mini-tests/README.md]
+[mini-tests](./notes/mini-tests)
+
+## Preparation for main-tests
+
+[main-tests](./notes/main-tests)
+
 
 ## Tricks
 
@@ -389,6 +394,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
