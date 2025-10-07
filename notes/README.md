@@ -77,6 +77,27 @@ echo "$FILE.txt"      # WORKS! (. is not part of variable name)
 echo "$FILEbackup"    # DOES NOT WORK! (looks for "FILEbackup" variable)
 echo "${FILE}backup"  # WORKS! Output: documentbackup
 ```
+
+### `2>/dev/null` - Discard Error Messages
+
+**What it does:** Redirects error messages to `/dev/null` (the "black hole" that discards everything).
+```bash
+# Command with error
+ls /nonexistent
+# Output: ls: cannot access '/nonexistent': No such file or directory
+
+# Discard error messages
+ls /nonexistent 2>/dev/null
+# Output: (nothing - error disappeared)
+
+# Find files without "Permission denied" errors
+find / -name "*.txt" 2>/dev/null
+
+# Check if command exists (quietly)
+command -v git 2>/dev/null && echo "Git installed"
+```
+
+
 ## Concepts
 
 ### Relative vs. Absolute Paths
@@ -161,6 +182,21 @@ jdjdkdks
 echo $?
 # Output: 127  (= command not found)
 ```
+
+### `||` and `&&`
+Chain commands based on success or failure of the previous command.
+
+```bash
+# && (AND) - run next command ONLY if previous succeeds
+mkdir mydir && cd mydir
+# cd runs ONLY if mkdir was successful
+
+# || (OR) - run next command ONLY if previous fails  
+cd mydir || mkdir mydir
+# mkdir runs ONLY if cd failed (directory doesn't exist)
+```
+
+
 
 ## Commands
 
@@ -524,6 +560,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
