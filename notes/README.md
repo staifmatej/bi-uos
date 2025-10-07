@@ -14,6 +14,8 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 ## Tricks
 
+### Brace Expansion (e.g. "{a,..z}")
+
 ## Concepts
 
 ### Relative vs. Absolute Paths
@@ -391,6 +393,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
