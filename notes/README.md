@@ -82,11 +82,9 @@ Special symbols:
 ## Special operators
 
 ### `~`
-
-**What it does:** `~` is a shortcut that represents your home directory path.
-
+A shortcut that represents your home directory path.
 On Linux/Ubuntu: `~` expands to `/home/username`  
-On macOS: `~` expands to `/Users/username`
+
 ```bash
 # These are equivalent:
 cd ~
@@ -505,6 +503,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
