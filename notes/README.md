@@ -366,7 +366,7 @@ echo $cislo           # prints: 15
 
 ### `sleep`
 
-**What is does:** `sleep` pauses execution for a specified amount of time.
+**What it does:** `sleep` pauses execution for a specified amount of time.
 ```bash
 sleep 5      # pause for 5 seconds (5000 miliseconds)
 sleep 10m    # pause for 10 minutes  
@@ -426,6 +426,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
