@@ -25,7 +25,7 @@ echo {ahoj,nazdar,cau}
 touch file_{1,5,10}.txt
 # Create: file_1.txt, file_5.txt, file_10.txt
 ```
-## Range (e.g. "{a,..z}")
+## Range (e.g. "{a..z}")
 ```bash
 echo {a..z}
 # Output: a b c d e f g h i j k l m n o p q r s t u v w x y z
@@ -426,6 +426,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
