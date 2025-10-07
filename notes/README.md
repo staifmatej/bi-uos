@@ -6,6 +6,12 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 **⚠️ Warning:** This documentation was written specifically for Linux OS, particularly tested on Debian and Ubuntu. For example, on macOS, some commands function slightly differently due to BSD vs. GNU implementations, even though they have the exact same names.
 
+## Preparation for mini-tests
+
+(mini-test-01)[mini-test-01]
+
+## Tricks
+
 ## Concepts
 
 ### Relative vs. Absolute Paths
@@ -383,6 +389,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
