@@ -14,8 +14,40 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 ## Tricks
 
-### Brace Expansion (e.g. "{a,..z}")
+## Comma-separated list (e.g. "{a,z}")
+```bash
+echo {a,z}
+# Output: a z
 
+echo {ahoj,nazdar,cau}
+# Output: ahoj nazdar cau
+
+touch file_{1,5,10}.txt
+# Create: file_1.txt, file_5.txt, file_10.txt
+```
+## Range (e.g. "{a,..z}")
+```bash
+echo {a..z}
+# Output: a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+echo {1..10}
+# Output: 1 2 3 4 5 6 7 8 9 10
+
+echo {A..F}
+# Output: A B C D E F
+
+touch file_{1..5}.txt
+# Create: file_1.txt, file_2.txt, file_3.txt, file_4.txt, file_5.txt
+```
+## Cross Product (e.g. "{a..z}{1..100}")
+```bash
+echo {a..c}{1..3}
+# Output: a1 a2 a3 b1 b2 b3 c1 c2 c3
+
+touch soubor_{a..d}{1..100}.txt
+# Create: soubor_a1.txt, soubor_a2.txt, ... soubor_d100.txt
+# Total: 4 letters × 100 numebers = 400 files!
+```
 ## Concepts
 
 ### Relative vs. Absolute Paths
@@ -393,6 +425,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
