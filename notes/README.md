@@ -294,12 +294,12 @@ mv old_folder new_folder     # rename folder
 
 **Counting lines/rows (-l)**
 ```bash
-wc -l soubor.txt            # it write the number of rows (lines). -l stands for lines. 
+wc -l soubor.txt            # it writes the number of rows (lines). -l stands for lines. 
 echo -e "a\nb\nc" | wc -l   # 3
 ```
 **Counting words (-w)**
 ```bash
-wc -w soubor.txt                   #  it write the number of words. -w stands for words.
+wc -w soubor.txt                   #  it writes the number of words. -w stands for words.
 echo "hello world test" | wc -w    # 3
 ```
 **Counting characters (-c or -m)**
@@ -375,9 +375,9 @@ sleep 10m    # pause for 10 minutes
 sleep 2h     # pause for 2 hours
 sleep 1000   # pause for 1000 seconds
 
-# miliseconds
-sleep 0.1    # pause for 100 miliseconds
-sleep 0.001  # pause for 1 miliseconds 
+# milliseconds
+sleep 0.1    # pause for 100 milliseconds
+sleep 0.001  # pause for 1 milliseconds 
 ```
 ```bash
 # usleep for microseconds
@@ -408,7 +408,7 @@ getent passwd              # show all users
 
 **What `printf` does:** `printf` prints text similar to `echo`.
 
-**Different between `printf`, `echo` and `echo -e`:**
+**Difference between `printf`, `echo` and `echo -e`:**
 
 1. `echo` and `echo -e` → always add `\n` on the end.<br>
    `printf` → never add anything automatic.
@@ -428,6 +428,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
