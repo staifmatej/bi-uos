@@ -302,10 +302,10 @@ echo "hello world test" | wc -w    # 3
 ```
 **Counting characters (-c or -m)**
 ```bash
-wc -m soubor.txt          # number of the multibyte characters (better for UTF-8)
-wc -c soubor.txt          # number of the characters/bytes
-echo "čeština" | wc -m    # 10 (bytes) ('č' and 'š' have both 2 bytes)
-echo "čeština" | wc -c    # 8 (characters) (count č' and 'š' as 1 byte characters)
+wc -m soubor.txt          # number of multibyte characters (better for UTF-8)
+wc -c soubor.txt          # number of bytes
+echo "čeština" | wc -m    # 8 (characters) - counts 'č' and 'š' as 1 character each
+echo "čeština" | wc -c    # 10 (bytes) - 'č' and 'š' each take 2 bytes in UTF-8
 
 ```
 
@@ -426,6 +426,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
