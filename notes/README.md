@@ -71,7 +71,7 @@ Special symbols:
 - `..` = parent directory
 - `~` = user's home directory
 
-### ~
+### `~`
 
 **What it does:** `~` is a shortcut that represents your home directory path.
 
@@ -425,6 +425,7 @@ echo -e "hello\n\tworld"      # print:
                               #     world (with tab and newline)
 echo "hello\n\tworld"         # print: hello\n\tworld
 ```
+
 
 
 
