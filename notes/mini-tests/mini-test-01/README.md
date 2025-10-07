@@ -16,7 +16,8 @@ mkdir -p ~/projects/project_{a..e}; date > ~/projects/project_a/info.txt
 C## Problem 03
 Create a command that creates a folder named `backup`. Inside the `backup` folder, create folders `jan`, `feb`, `mar`, `apr`, `may`, `jun`, `jul`, `aug`, `sep`, `oct`, `nov`, and `dec`. Then, inside the `jan` folder, create a file named `status.txt` and save the text "Backup completed" using the command `echo`.
 ```bash
-mkdir -p ~/backup/{jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}; echo "Backup completed" > ~/backup/jan/status.txt
+mkdir -p ~/backup/{jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec};
+echo "Backup completed" > ~/backup/jan/status.txt
 ```
 ## Problem 04
 Create a command that creates a variable `USERNAME` with the value of your username (use `whoami`) and a variable `CURRENT_PATH` with the current directory path (use `pwd`). Then create a folder named `logs` and inside it create folders `log1` through `log10`. Finally, inside `logs/log1/`, create a file named `info.txt` and save three separate lines: the first line should contain the value of `USERNAME`, the second line should contain the value of `CURRENT_PATH`, and the third line should contain the current date using the command date.
@@ -35,5 +36,6 @@ mkdir ~/workspace;
 touch ~/workspace/${PROJECT}_{backup,final,draft}.txt;
 echo "Backup completed for ${PROJECT}" > ~/workspace/${PROJECT}_backup.txt
 ```
+
 
 
