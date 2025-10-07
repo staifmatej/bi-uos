@@ -16,7 +16,7 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 Quick navigation to command documentation:
 
-[`awk`](#awk) | [`cd`](#cd) | [`date`](#date) | [`declare`](#declare) | [`fgrep`](#fgrep) | [`getent`](#getent) | [`grep`](#grep) | [`id`](#id) | [`less`](#less) | [`ls`](#ls) | [`man`](#man) | [`mv`](#mv) | [`printf` & `echo`](#printf--echo) | [`pwd`](#pwd) | [`sleep`](#sleep) | [`sort`](#sort) | [`tr`](#tr) | [`wc`](#wc)
+[`awk`](#awk) | [`cd`](#cd) | [`date`](#date) | [`declare`](#declare) | [`fgrep`](#fgrep) | [`getent`](#getent) | [`grep`](#grep) | [`id`](#id) | [`less`](#less) | [`ls`](#ls) | [`man`](#man) | [`mv`](#mv) | [`printf` & `echo`](#printf--echo) | [`pwd`](#pwd) | [`sleep`](#sleep) | [`sort`](#sort) | [`tr`](#tr) | [`wc`](#wc) | [`mkdir`](#mkdir)
 
 ## Tricks
 
@@ -555,5 +555,17 @@ cat test.txt
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
 ```
+
+### `mkdir`
+**What it does:** creates directories (folders).
+```bash
+mkdir folder_name            # create single folder
+mkdir folder1 folder2        # create multiple folders
+
+
+mkdir -p a/b/c               # creates a, then b inside a, then c inside b
+                             # no error even if "a", "b" or "c" exists!
+```
+
 
 
