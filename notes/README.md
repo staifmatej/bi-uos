@@ -132,8 +132,7 @@ echo "new line" >> files.txt
 ```
 
 ### `$?`
-
-**What it does:** `$?` is a special variable that contains the exit status (return code) of the last executed command.
+A special variable that contains the exit status (return code) of the last executed command.
 ```bash
 # Run non-existent command
 jdjdkdks
@@ -506,6 +505,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
