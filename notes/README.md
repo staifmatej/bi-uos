@@ -16,24 +16,7 @@ The first shell ever created was the Thompson shell in 1971 at Bell Labs for Uni
 
 Quick navigation to command documentation:
 
-[`awk`](#awk) - Process and analyze text files  
-[`cd`](#cd) - Change directory  
-[`date`](#date) - Display or set date and time  
-[`declare`](#declare) - Define variable types  
-[`fgrep`](#fgrep) - Search for exact text  
-[`getent`](#getent) - Get system database entries  
-[`grep`](#grep) - Search for text patterns  
-[`id`](#id) - Show user and group information  
-[`less`](#less) - View file content page by page  
-[`ls`](#ls) - List directory contents  
-[`man`](#man) - Show manual pages  
-[`mv`](#mv) - Move or rename files  
-[`printf` & `echo`](#printf--echo) - Print text output  
-[`pwd`](#pwd) - Print working directory  
-[`sleep`](#sleep) - Pause execution  
-[`sort`](#sort) - Sort lines of text  
-[`tr`](#tr) - Transform or delete characters  
-[`wc`](#wc) - Count lines, words, and characters
+[`awk`](#awk) | [`cd`](#cd) | [`date`](#date) | [`declare`](#declare) | [`fgrep`](#fgrep) | [`getent`](#getent) | [`grep`](#grep) | [`id`](#id) | [`less`](#less) | [`ls`](#ls) | [`man`](#man) | [`mv`](#mv) | [`printf` & `echo`](#printf--echo) | [`pwd`](#pwd) | [`sleep`](#sleep) | [`sort`](#sort) | [`tr`](#tr) | [`wc`](#wc)
 
 ## Tricks
 
@@ -462,4 +445,5 @@ echo -e "zebra\napple\nbanana\ncat" > animals.txt
 # Sort alphabetically (default)
 sort animals.txt
 # Output: apple, banana, cat, zebra
+
 
