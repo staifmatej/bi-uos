@@ -485,6 +485,16 @@ cat test.txt
 # Now contains: apple, banana, cat (without duplicates)
 ```
 
+**Most common arguments:**<br>
+-n → numeric sort (treats content as numbers, not text)<br>
+-r → reverse order (Z to A, or high to low)<br>
+-u → unique (removes duplicate lines)<br>
+-k N → sort by Nth column/field<br>
+-t X → use X as field delimiter/separator<br>
+-f → case-insensitive (ignore uppercase/lowercase)<br>
+-o FILE → output to FILE (safe for overwriting input file)<br>
+
+
 
 
 
