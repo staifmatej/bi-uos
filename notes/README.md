@@ -554,17 +554,4 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
