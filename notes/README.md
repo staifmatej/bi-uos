@@ -78,7 +78,7 @@ echo "$FILEbackup"    # DOES NOT WORK! (looks for "FILEbackup" variable)
 echo "${FILE}backup"  # WORKS! Output: documentbackup
 ```
 
-### `2>/dev/null` - Discard Error Messages
+### `2>/dev/null` - Redirected to the Black Hall 
 
 **What it does:** Redirects error messages to `/dev/null` (the "black hole" that discards everything).
 ```bash
@@ -560,6 +560,7 @@ cat test.txt
 -t X → use X as field delimiter/separator<br>
 -f → case-insensitive (ignore uppercase/lowercase)<br>
 -o FILE → output to FILE (safe for overwriting input file)<br>
+
 
 
 
