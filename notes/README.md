@@ -461,5 +461,26 @@ sort -n numbers.txt
 # Output: 2, 3, 10, 100
 ```
 
+**Sort without Duplicates (-u)**
+```bash
+# Create test file
+echo -e "apple\nbanana\napple\ncat\nbanana" > test.txt
+
+# Show without duplicates (DOES NOT overwrite file)
+sort -u test.txt
+# Output to screen: apple, banana, cat
+
+# Check original file
+cat test.txt
+# Still contains: apple, banana, apple, cat, banana
+
+# Now save it back
+sort -u test.txt -o test.txt
+
+# Now check
+cat test.txt
+# Now contains: apple, banana, cat (without duplicates)
+```
+
 
 
