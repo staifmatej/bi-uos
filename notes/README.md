@@ -433,6 +433,15 @@ cislo=cislo+5         # result: INTEGER 15
 echo $cislo           # prints: 15
 ```
 
+**declare -p**
+```
+# It prints all variables in the current shell along with their attributes.
+declare -p
+# Output:
+# declare -- cislo="15"
+# declare -i cislo="15"
+```
+
 ### `sleep`
 
 **What it does:** `sleep` pauses execution for a specified amount of time.
@@ -566,6 +575,7 @@ mkdir folder1 folder2        # create multiple folders
 mkdir -p a/b/c               # creates a, then b inside a, then c inside b
                              # no error even if "a", "b" or "c" exists!
 ```
+
 
 
 
